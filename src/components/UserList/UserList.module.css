@@ -1,0 +1,30 @@
+.userList {
+  background-color: white;
+  width: 70%;
+  padding: 1rem;
+  min-height: 90vh;
+  max-height: inherit;
+  margin: 8px auto;
+  border-radius: 16px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 20rem 12rem 12rem;
+  padding: 0.2rem 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 1230px) {
+  .userList {
+    width: 60%;
+  }
+  .header {
+    grid-template-columns: 16rem 10rem 10rem;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .header {
+    grid-template-columns: 16rem 8rem 8rem;
+  }
+}
