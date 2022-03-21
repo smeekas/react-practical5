@@ -37,5 +37,5 @@
 ```
 
 ## App preview
-![screenshot](./public/images/ss1.png)
-![screenshot](./public/images/ss2.png)
+![screenshot](./public/ss1.png)
+![screenshot](./public/ss2.png)
