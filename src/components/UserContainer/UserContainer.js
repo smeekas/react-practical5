@@ -1,5 +1,5 @@
-import UserList from "./UserList/UserList";
-import UserDetail from "./UserDetail/UserDetail";
+import UserList from "../UserList/UserList";
+import UserDetail from "../UserDetail/UserDetail";
 
 const UserContainer = () => {
   return (

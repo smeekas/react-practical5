@@ -2,6 +2,7 @@ import styles from "./UserDetail.module.css";
 import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import Button from "../UI/Button/Button";
+import Avatar from "../Avatar/Avatar";
 const UserDetail = () => {
   const detail = useSelector((state) => state.userDetail);
   const content = detail ? (
@@ -12,7 +13,7 @@ const UserDetail = () => {
     >
       <div>
         <div className={styles.avatar}>
-          <img src={detail.avatar} alt={detail.id} />
+          <Avatar src={detail.avatar} alt={detail.id} />
         </div>
         <div className={styles.details}>
           <p className={styles.name}>
