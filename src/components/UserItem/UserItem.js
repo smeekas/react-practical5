@@ -3,15 +3,15 @@ import { FiTrash2, FiLock } from "react-icons/fi";
 import { useDispatch } from "react-redux";
 import { motion } from "framer-motion";
 import DropDownMenu from "../DropDownMenu/DropDownMenu";
-import { actionTypes } from "../../store/userReducer";
+import {userActionTypes} from "../../actionTypes/userActionTypes";
 import Avatar from "../Avatar/Avatar";
 const UserItem = (props) => {
   const dispatch = useDispatch();
   const deleteHandler = () => {
-    dispatch({ type: actionTypes.DELETE_USER, id: props.data.id });
+    dispatch({ type: userActionTypes.DELETE_USER, id: props.data.id });
   };
   const hoverHandler = () => {
-    dispatch({ type: actionTypes.SHOW_USER, id: props.data.id });
+    dispatch({ type: userActionTypes.SHOW_USER, id: props.data.id });
   };
   const ID = props.data.id;
   return (

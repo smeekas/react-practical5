@@ -1,7 +1,4 @@
-export const actionTypes = {
-  DELETE_USER: "delete",
-  SHOW_USER: "userdetail",
-};
+import {userActionTypes} from "../actionTypes/userActionTypes";
 
 const initialValues = {
   data: [
@@ -81,7 +78,7 @@ const initialValues = {
 };
 const userReducer = (state = initialValues, action) => {
   switch (action.type) {
-    case actionTypes.DELETE_USER:
+    case userActionTypes.DELETE_USER:
       let newUserDetail;
       if (state.userDetail) {
         if (action.id === state.userDetail.id) {
@@ -97,7 +94,7 @@ const userReducer = (state = initialValues, action) => {
         userDetail: newUserDetail,
         change: state.change,
       };
-    case actionTypes.SHOW_USER:
+    case userActionTypes.SHOW_USER:
       const detail = state.data.find((user) => user.id === action.id);
       return {
         data: state.data,
